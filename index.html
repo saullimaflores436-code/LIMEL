@@ -1,0 +1,802 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description"
+    content="LIMÉL — Miel de abeja 100% natural, artesanal y pura. Directamente de nuestras colmenas a tu mesa. Conoce nuestros productos y contáctanos por WhatsApp." />
+  <meta name="keywords"
+    content="miel de abeja, miel natural, miel artesanal, apicultura, LIMÉL, comprar miel, Ayacucho" />
+  <meta property="og:title" content="LIMÉL — Miel de Abeja Natural y Artesanal" />
+  <meta property="og:description"
+    content="Miel 100% natural, sin aditivos ni conservantes. Directamente de nuestras colmenas en Ayacucho." />
+  <meta property="og:type" content="website" />
+  <title>LIMÉL — Miel de Abeja Natural y Artesanal</title>
+  <link rel="stylesheet" href="css/styles.css" />
+  <!-- Favicon inline SVG bee -->
+  <link rel="icon"
+    href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🍯</text></svg>" />
+</head>
+
+<body>
+
+  <!-- ══════════════════════════════════════════════════════
+       NAVBAR
+  ══════════════════════════════════════════════════════ -->
+  <nav id="navbar" role="navigation" aria-label="Menú principal">
+    <div class="nav-inner">
+      <!-- Logo -->
+      <a href="#inicio" class="nav-logo" aria-label="LIMÉL - Inicio">
+        <img src="assets/images/logo.jpg" alt="Logo LIMÉL" />
+        <span class="nav-logo-text">LIMÉL</span>
+      </a>
+
+      <!-- Desktop links -->
+      <ul class="nav-links" role="menubar">
+        <li role="none"><a href="#inicio" role="menuitem">Inicio</a></li>
+        <li role="none"><a href="#catalogo" role="menuitem">Catálogo</a></li>
+        <li role="none"><a href="#informacion" role="menuitem">Información</a></li>
+        <li role="none"><a href="#beneficios" role="menuitem">Beneficios</a></li>
+        <li role="none"><a href="#nosotros" role="menuitem">Nosotros</a></li>
+        <li role="none"><a href="#contacto" role="menuitem">Contacto</a></li>
+        <li role="none">
+          <a href="https://wa.me/51900173076?text=Hola%2C%20me%20interesa%20la%20miel%20LIMELL" class="nav-whatsapp"
+            target="_blank" rel="noopener noreferrer" aria-label="Contactar por WhatsApp" id="navbar-whatsapp-btn">
+            <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor" aria-hidden="true">
+              <path
+                d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
+            </svg>
+            WhatsApp
+          </a>
+        </li>
+      </ul>
+
+      <!-- Hamburger -->
+      <button id="nav-toggle" class="nav-toggle" aria-label="Abrir menú" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Mobile Drawer -->
+  <div id="nav-drawer" class="nav-drawer" role="dialog" aria-modal="true" aria-label="Menú de navegación">
+    <button id="drawer-close" class="drawer-close" aria-label="Cerrar menú">✕</button>
+    <a href="#inicio">Inicio</a>
+    <a href="#catalogo">Catálogo</a>
+    <a href="#informacion">Información General</a>
+    <a href="#beneficios">Beneficios</a>
+    <a href="#nosotros">Sobre Nosotros</a>
+    <a href="#contacto">Contacto</a>
+    <a href="https://wa.me/51900173076?text=Hola%2C%20me%20interesa%20la%20miel%20LIM%C3%89L" target="_blank"
+      rel="noopener noreferrer" style="color:#25D366;margin-top:16px;font-size:1.3rem;">
+      💬 WhatsApp
+    </a>
+  </div>
+
+
+  <!-- ══════════════════════════════════════════════════════
+       INICIO — HERO
+  ══════════════════════════════════════════════════════ -->
+  <section id="inicio" aria-label="Inicio">
+
+    <div class="hero-bg" role="img" aria-label="Colmenas en campo al atardecer"></div>
+    <div class="hero-overlay"></div>
+
+    <div class="hero-content">
+      <!-- Texto principal -->
+      <div class="hero-text">
+        <div class="hero-badge fade-in">🐝 Apicultura artesanal</div>
+        <h1 class="hero-title fade-in delay-1">
+          La miel más pura,<br />
+          <span>directamente de la naturaleza</span>
+        </h1>
+        <p class="hero-desc fade-in delay-2">
+          En LIMÉL cosechamos miel 100% natural, sin aditivos ni conservantes.
+          Cada frasco es el resultado del trabajo de miles de abejas y nuestro
+          compromiso con la apicultura responsable.
+        </p>
+        <div class="hero-actions fade-in delay-3">
+          <a href="#catalogo" class="btn btn-primary btn-lg">
+            🍯 Ver producto
+          </a>
+          <a href="https://wa.me/51900173076?text=Hola%2C%20quiero%20pedir%20miel%20LIM%C3%89L"
+            class="btn-whatsapp btn-lg" target="_blank" rel="noopener noreferrer" id="hero-whatsapp-btn"
+            aria-label="Contactar por WhatsApp">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+              <path
+                d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
+            </svg>
+            Contactar ahora
+          </a>
+        </div>
+      </div>
+
+      <!-- Product card -->
+      <div class="hero-card fade-in-right delay-2" aria-label="Producto destacado">
+        <img src="assets/images/honey-jar.jpg" alt="Miel de Abeja LIMÉL 1 kg" class="hero-card-img" />
+        <div class="hero-card-label">🌟 Producto destacado</div>
+        <div class="hero-card-title">Miel de Abeja LIMÉL</div>
+        <div class="hero-card-presentation">Presentación: 1 000 g (1 kg)</div>
+        <div class="hero-card-price">S/ 35.00</div>
+        <p class="hero-card-desc">
+          Miel pura, sin aditivos ni conservantes, obtenida de colmenas
+          seleccionadas. Su sabor, aroma y color son el resultado de flores silvestres.
+        </p>
+        <a href="https://wa.me/51900173076?text=Hola%2C%20quiero%20pedir%20miel%20LIM%C3%89L%201%20kg"
+          class="btn-whatsapp" target="_blank" rel="noopener noreferrer" id="hero-card-whatsapp-btn"
+          style="width:100%;justify-content:center;">
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+            <path
+              d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
+          </svg>
+          Pedir por WhatsApp
+        </a>
+      </div>
+    </div>
+
+    <!-- Trust badges -->
+    <div class="hero-badges">
+      <div class="trust-badge fade-in delay-1">
+        <div class="trust-badge-icon">🌿</div>
+        <div class="trust-badge-text">100% Natural<br />Sin aditivos</div>
+      </div>
+      <div class="trust-badge fade-in delay-2">
+        <div class="trust-badge-icon">🏺</div>
+        <div class="trust-badge-text">Producción<br />Artesanal</div>
+      </div>
+      <div class="trust-badge fade-in delay-3">
+        <div class="trust-badge-icon">✅</div>
+        <div class="trust-badge-text">Calidad<br />Garantizada</div>
+      </div>
+      <div class="trust-badge fade-in delay-4">
+        <div class="trust-badge-icon">🐝</div>
+        <div class="trust-badge-text">Apicultura<br />Responsable</div>
+      </div>
+    </div>
+
+  </section>
+
+
+  <!-- ══════════════════════════════════════════════════════
+       CATÁLOGO
+  ══════════════════════════════════════════════════════ -->
+  <section id="catalogo" class="section section--cream-2" aria-label="Catálogo de productos">
+    <div class="container">
+      <div class="text-center fade-in">
+        <span class="section-label">Catálogo</span>
+        <h2 class="section-title">Nuestra Miel de Abeja</h2>
+        <p class="section-subtitle">Conoce nuestra miel pura y natural, cosechada con cuidado en cada temporada.</p>
+      </div>
+
+      <div class="catalogo-grid">
+        <!-- Imagen -->
+        <div class="catalogo-img-wrap fade-in-left">
+          <img src="assets/images/honey-jar.jpg" alt="Miel de Abeja LIMELL — Frasco de 1 kg" />
+          <span class="catalogo-img-badge">🌿 100% Natural</span>
+        </div>
+
+        <!-- Info del producto -->
+        <div class="catalogo-info fade-in-right">
+          <span class="section-label">Producto disponible</span>
+          <h2 class="product-name">Miel de Abeja<br />100% Natural LIMÉL</h2>
+          <p class="product-presentation">📦 Presentación: 1 000 g (1 kg)</p>
+          <p class="product-price">S/ 35.00</p>
+          <p class="product-desc">
+            Miel pura, obtenida de colmenas seleccionadas ubicadas en zonas naturales
+            alejadas de la contaminación. Sin aditivos, sin conservantes y sin procesos
+            de calentamiento que afecten sus propiedades. Su sabor, aroma y color son
+            el resultado directo de las flores silvestres de la región.
+          </p>
+
+          <p class="features-title">Características del producto</p>
+          <ul class="features-list" aria-label="Características del producto">
+            <li>Sin conservantes ni aditivos artificiales</li>
+            <li>Cosecha artesanal y proceso mínimo</li>
+            <li>Fuente natural de energía y antioxidantes</li>
+            <li>Sabor auténtico de flores silvestres</li>
+          </ul>
+
+          <div class="catalogo-cta">
+            <a href="https://wa.me/51900173076?text=Hola%2C%20quiero%20comprar%20miel%20LIM%C3%89L%201%20kg"
+              class="btn-whatsapp btn-lg" target="_blank" rel="noopener noreferrer" id="catalogo-comprar-btn"
+              aria-label="Comprar por WhatsApp">
+              <svg viewBox="0 0 24 24" fill="currentColor" width="22" height="22" aria-hidden="true">
+                <path
+                  d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
+              </svg>
+              Comprar por WhatsApp
+            </a>
+            <p class="catalogo-cta-note">
+              ℹ️ La compra y el pago se coordinan directamente con nosotros. WhatsApp es nuestro canal de ventas.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- CTA strip -->
+    <div class="cta-strip fade-in" style="margin-top:80px;">
+      <div class="container text-center">
+        <p>¿Tienes dudas o deseas hacer un pedido?</p>
+        <h3>Escríbenos por WhatsApp y con gusto te atendemos.</h3>
+        <div style="display:flex;gap:16px;justify-content:center;flex-wrap:wrap;">
+          <a href="https://wa.me/51900173076?text=Hola%2C%20tengo%20una%20consulta%20sobre%20la%20miel%20LIMELL"
+            class="btn-whatsapp btn-lg" target="_blank" rel="noopener noreferrer" id="catalogo-consulta-btn1"
+            aria-label="Consultar por WhatsApp línea 1">
+            <svg viewBox="0 0 24 24" fill="currentColor" width="22" height="22" aria-hidden="true">
+              <path
+                d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
+            </svg>
+            900 173 076
+          </a>
+          <a href="https://wa.me/51900169735?text=Hola%2C%20tengo%20una%20consulta%20sobre%20la%20miel%20LIMELL"
+            class="btn-whatsapp btn-lg" target="_blank" rel="noopener noreferrer" id="catalogo-consulta-btn2"
+            style="background:linear-gradient(135deg,#1DA462,#0D6E4A);">
+            <svg viewBox="0 0 24 24" fill="currentColor" width="22" height="22" aria-hidden="true">
+              <path
+                d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
+            </svg>
+            900 169 735
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ══════════════════════════════════════════════════════
+       INFORMACIÓN GENERAL
+  ══════════════════════════════════════════════════════ -->
+  <section id="informacion" class="section" aria-label="Información general sobre la miel">
+    <div class="container">
+      <div class="text-center fade-in">
+        <span class="section-label">Información General</span>
+        <h2 class="section-title">Todo sobre la miel de abeja</h2>
+        <p class="section-subtitle">Conoce qué es la miel, cómo se obtiene y cuáles son sus principales características.
+        </p>
+      </div>
+
+      <div class="info-grid">
+
+        <!-- ¿Qué es? -->
+        <div class="info-card fade-in delay-1">
+          <div class="info-card-icon">🍯</div>
+          <h3>¿Qué es la miel de abeja?</h3>
+          <p>
+            La miel es una sustancia natural producida por las abejas (<em>Apis mellifera</em>)
+            a partir del néctar de las flores. Las abejas recolectan el néctar, lo procesan
+            con enzimas propias y lo depositan en los panales para su maduración. El resultado
+            es un alimento denso, dulce y lleno de compuestos bioactivos. Su composición varía
+            según el tipo de flores de las que proviene, lo que explica la diversidad de
+            sabores, colores y aromas que puede presentar.
+          </p>
+        </div>
+
+        <!-- ¿Cómo se obtiene? -->
+        <div class="info-card fade-in delay-2">
+          <div class="info-card-icon">🌸</div>
+          <h3>¿Cómo se obtiene?</h3>
+          <p>
+            El proceso comienza cuando las abejas recolectoras visitan las flores y recogen
+            el néctar con su probóscide. En la colmena, otras abejas lo procesan
+            masticándolo y añadiendo enzimas que transforman los azúcares. Luego lo depositan
+            en las celdas del panal, donde el agua se evapora gracias al aleteo constante
+            de las abejas hasta alcanzar la concentración adecuada. Los apicultores retiran
+            los marcos llenos, extraen la miel por centrifugado y la filtran para eliminar
+            restos de cera, conservando sus propiedades intactas.
+          </p>
+        </div>
+
+        <!-- Características de una miel natural -->
+        <div class="info-card fade-in delay-3">
+          <div class="info-card-icon">✨</div>
+          <h3>Características de una miel natural</h3>
+          <p>
+            Una miel natural y de calidad presenta ciertas características que la distinguen
+            de los productos adulterados: su textura es densa y viscosa; su color puede
+            variar del dorado claro al ámbar oscuro según la flora de origen; su aroma es
+            floral y complejo; y con el tiempo tiende a cristalizar, lo cual es una señal
+            de autenticidad. No debe presentar espuma excesiva ni separación de capas.
+            La miel pura no caduca si se almacena correctamente en recipientes sellados
+            y lejos de la humedad.
+          </p>
+        </div>
+
+        <!-- Información sobre el consumo -->
+        <div class="info-card fade-in delay-4">
+          <div class="info-card-icon">🥄</div>
+          <h3>Información sobre el consumo</h3>
+          <p>
+            La miel puede consumirse directamente, usarse como endulzante natural en bebidas
+            o preparaciones culinarias, y aplicarse como ingrediente en recetas dulces y
+            saladas. Se recomienda consumirla con moderación, especialmente en personas con
+            diabetes o que controlan su ingesta de azúcares.
+            <strong>No debe administrarse a niños menores de 1 año</strong> debido al riesgo
+            de botulismo infantil. Para preservar sus propiedades, es preferible no calentarla
+            a temperaturas elevadas. Almacenarla en un lugar fresco, seco y alejado de la
+            luz directa garantiza su durabilidad.
+          </p>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Decorative strip -->
+    <div class="honeycomb-strip" style="margin-top:80px;" aria-hidden="true"></div>
+  </section>
+
+
+  <!-- ══════════════════════════════════════════════════════
+       BENEFICIOS
+  ══════════════════════════════════════════════════════ -->
+  <section id="beneficios" class="section section--dark" aria-label="Beneficios de la miel">
+    <div class="container">
+      <div class="text-center fade-in">
+        <span class="section-label" style="color:var(--color-primary-light)">Beneficios</span>
+        <h2 class="section-title">Beneficios de la Miel de Abeja</h2>
+        <p class="section-subtitle">
+          Información basada en investigaciones científicas y recomendaciones de organismos reconocidos.
+        </p>
+      </div>
+
+      <!-- Disclaimer -->
+      <div class="disclaimer-box fade-in">
+        <span>⚠️</span>
+        <p>
+          <strong style="color:rgba(255,248,231,.9)">Aviso importante:</strong>
+          La siguiente información tiene carácter educativo y divulgativo. No constituye
+          un diagnóstico médico, ni una recomendación de tratamiento o cura de enfermedades.
+          Ante cualquier consulta sobre salud, consulte a un profesional médico calificado.
+        </p>
+      </div>
+
+      <!-- Beneficio cards -->
+      <div class="beneficios-grid">
+
+        <!-- Energía -->
+        <div class="beneficio-card fade-in delay-1">
+          <div class="beneficio-card-header">
+            <div class="beneficio-icon">⚡</div>
+            <h3>Fuente natural de energía</h3>
+          </div>
+          <p>
+            La miel es una fuente concentrada de carbohidratos, principalmente fructosa y
+            glucosa, que el organismo puede absorber con relativa rapidez. Cada 100 g de
+            miel aporta aproximadamente 304 kcal. Por su contenido de azúcares naturales,
+            es utilizada por atletas y como fuente de energía rápida en situaciones de
+            desgaste físico.
+          </p>
+          <div class="beneficio-cite">
+            <span>📋</span>
+            USDA FoodData Central. (2019). <em>Honey, raw.</em> U.S. Department of Agriculture.
+            Recuperado de fdc.nal.usda.gov
+          </div>
+        </div>
+
+        <!-- Antioxidantes -->
+        <div class="beneficio-card fade-in delay-2">
+          <div class="beneficio-card-header">
+            <div class="beneficio-icon">🛡️</div>
+            <h3>Propiedades antioxidantes</h3>
+          </div>
+          <p>
+            Diversos estudios han identificado en la miel compuestos fenólicos, flavonoides
+            y otros antioxidantes que contribuyen a neutralizar los radicales libres. La
+            concentración de estos compuestos varía según el origen botánico de la miel;
+            las variedades más oscuras tienden a presentar mayor actividad antioxidante.
+          </p>
+          <div class="beneficio-cite">
+            <span>📋</span>
+            Gheldof, N. &amp; Engeseth, N. J. (2002). Antioxidant capacity of honeys from
+            various floral sources based on the determination of oxygen radical absorbance
+            capacity and inhibition of in vitro lipoprotein oxidation in human serum samples.
+            <em>Journal of Agricultural and Food Chemistry, 50</em>(10), 3050–3055.
+          </div>
+        </div>
+
+        <!-- Sistema inmunológico -->
+        <div class="beneficio-card fade-in delay-3">
+          <div class="beneficio-card-header">
+            <div class="beneficio-icon">🩺</div>
+            <h3>Apoyo al sistema inmunológico</h3>
+          </div>
+          <p>
+            Investigaciones sugieren que la miel, especialmente variedades como la miel
+            de Manuka, posee propiedades que pueden contribuir a la modulación de la
+            respuesta inmunitaria. Se han identificado compuestos como el peróxido de
+            hidrógeno, el metilglioxal y defensinas que podrían influir en estos mecanismos.
+          </p>
+          <div class="beneficio-cite">
+            <span>📋</span>
+            Alvarez-Suarez, J. M., Gasparrini, M., Forbes-Hernández, T. Y., Mazzoni, L. &amp;
+            Giampieri, F. (2014). The composition and biological activity of honey: A focus
+            on Manuka honey. <em>Foods, 3</em>(3), 420–432. https://doi.org/10.3390/foods3030420
+          </div>
+        </div>
+
+        <!-- Digestión -->
+        <div class="beneficio-card fade-in delay-4">
+          <div class="beneficio-card-header">
+            <div class="beneficio-icon">🌱</div>
+            <h3>Efecto prebiótico y digestión</h3>
+          </div>
+          <p>
+            La miel contiene oligosacáridos que actúan como prebióticos, favoreciendo el
+            crecimiento de bacterias beneficiosas en el intestino como <em>Lactobacillus</em>
+            y <em>Bifidobacterium</em>. Algunos estudios sugieren que su consumo moderado
+            puede contribuir al equilibrio de la microbiota intestinal.
+          </p>
+          <div class="beneficio-cite">
+            <span>📋</span>
+            Molan, P. &amp; Rhodes, T. (2015). Honey: A biologic wound dressing.
+            <em>Wounds: A Compendium of Clinical Research and Practice, 27</em>(6), 141–151.
+            PMID: 26061489
+          </div>
+        </div>
+
+        <!-- Antimicrobiano -->
+        <div class="beneficio-card fade-in delay-1">
+          <div class="beneficio-card-header">
+            <div class="beneficio-icon">🔬</div>
+            <h3>Propiedades antimicrobianas</h3>
+          </div>
+          <p>
+            La miel presenta un bajo contenido de agua y un pH ácido (entre 3.2 y 4.5),
+            condiciones que inhiben el crecimiento de muchos microorganismos. Además,
+            la producción de peróxido de hidrógeno mediante la enzima glucosa oxidasa
+            contribuye a su actividad antimicrobiana, documentada en múltiples estudios
+            científicos y en el contexto de su uso en el cuidado de heridas menores.
+          </p>
+          <div class="beneficio-cite">
+            <span>📋</span>
+            National Honey Board. (2023). <em>Honey and health.</em> Honey.com.
+            Recuperado de honey.com/honey-industry/honey-and-health;
+            Mandal, M. D. &amp; Mandal, S. (2011). Honey: Its medicinal property and
+            antibacterial activity. <em>Asian Pacific Journal of Tropical Biomedicine, 1</em>(2), 154–160.
+          </div>
+        </div>
+
+        <!-- Bienestar general -->
+        <div class="beneficio-card fade-in delay-2">
+          <div class="beneficio-card-header">
+            <div class="beneficio-icon">💛</div>
+            <h3>Bienestar general y uso tradicional</h3>
+          </div>
+          <p>
+            La miel ha sido valorada en diversas culturas a lo largo de la historia como
+            alimento y remedio tradicional. Organizaciones de salud como la OMS reconocen
+            su uso popular para aliviar síntomas leves de la garganta. En cocina, es un
+            endulzante natural con menor índice glucémico que el azúcar refinada, aunque
+            se recomienda siempre un consumo moderado y consciente.
+          </p>
+          <div class="beneficio-cite">
+            <span>📋</span>
+            World Health Organization. (2001). <em>WHO monographs on selected medicinal
+              plants, Vol. 2.</em> WHO Press. (Referencia general sobre uso tradicional
+            de productos apícolas.)
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Referencias -->
+      <div class="referencias-section fade-in">
+        <h3>📚 Referencias bibliográficas</h3>
+        <ul class="referencias-list" aria-label="Referencias bibliográficas">
+          <li>
+            USDA FoodData Central. (2019). <em>Honey, raw.</em> U.S. Department of Agriculture.
+            Disponible en: fdc.nal.usda.gov
+          </li>
+          <li>
+            Gheldof, N. &amp; Engeseth, N. J. (2002). Antioxidant capacity of honeys from various
+            floral sources based on the determination of oxygen radical absorbance capacity and inhibition
+            of in vitro lipoprotein oxidation in human serum samples.
+            <em>Journal of Agricultural and Food Chemistry, 50</em>(10), 3050–3055.
+            https://doi.org/10.1021/jf0114530
+          </li>
+          <li>
+            Alvarez-Suarez, J. M., Gasparrini, M., Forbes-Hernández, T. Y., Mazzoni, L. &amp;
+            Giampieri, F. (2014). The composition and biological activity of honey: A focus on Manuka honey.
+            <em>Foods, 3</em>(3), 420–432. https://doi.org/10.3390/foods3030420
+          </li>
+          <li>
+            Molan, P. &amp; Rhodes, T. (2015). Honey: A biologic wound dressing.
+            <em>Wounds: A Compendium of Clinical Research and Practice, 27</em>(6), 141–151.
+            PMID: 26061489
+          </li>
+          <li>
+            Mandal, M. D. &amp; Mandal, S. (2011). Honey: Its medicinal property and antibacterial activity.
+            <em>Asian Pacific Journal of Tropical Biomedicine, 1</em>(2), 154–160.
+            https://doi.org/10.1016/S2221-1691(11)60016-6
+          </li>
+          <li>
+            National Honey Board. (2023). <em>Honey and health.</em> Honey.com.
+            Recuperado de: https://honey.com/honey-industry/honey-and-health
+          </li>
+          <li>
+            World Health Organization. (2001). <em>WHO monographs on selected medicinal plants, Vol. 2.</em>
+            WHO Press. ISBN 92 4 154537 2
+          </li>
+        </ul>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ══════════════════════════════════════════════════════
+       SOBRE NOSOTROS
+  ══════════════════════════════════════════════════════ -->
+  <section id="nosotros" class="section section--cream" aria-label="Sobre nosotros">
+    <div class="container">
+      <div class="text-center fade-in">
+        <span class="section-label">Sobre Nosotros</span>
+        <h2 class="section-title">Nuestra historia y compromiso</h2>
+        <p class="section-subtitle">
+          Conoce quiénes somos, cómo producimos nuestra miel y por qué nos apasiona la apicultura responsable.
+        </p>
+      </div>
+
+      <div class="nosotros-intro">
+        <div class="nosotros-img fade-in-left">
+          <img src="assets/images/beekeeper.jpg" alt="Apicultor de LIMÉL inspeccionando colmena" />
+        </div>
+        <div class="fade-in-right">
+          <span class="section-label">Nuestra historia</span>
+          <h3
+            style="font-family:var(--font-display);font-size:1.8rem;font-weight:700;color:var(--color-dark);margin-bottom:16px;line-height:1.3;">
+            Nacimos del amor por la naturaleza y las abejas
+          </h3>
+          <p style="font-size:1rem;color:var(--color-text);line-height:1.8;margin-bottom:16px;">
+            LIMÉL nació de una pasión familiar por la apicultura. Lo que comenzó como
+            una actividad artesanal a pequeña escala se fue convirtiendo en un compromiso
+            serio con la producción de miel de calidad. Desde el inicio, nuestra prioridad
+            fue siempre la pureza del producto y el bienestar de las colmenas.
+          </p>
+          <p style="font-size:1rem;color:var(--color-text);line-height:1.8;">
+            Hoy, LIMÉL es el resultado de años de aprendizaje, dedicación y respeto por
+            los ciclos naturales. Cada frasco de miel que ofrecemos lleva consigo el
+            esfuerzo de nuestras abejas y el cuidado de nuestro equipo.
+          </p>
+        </div>
+      </div>
+
+      <div class="nosotros-cards">
+
+        <div class="nosotros-card fade-in delay-1">
+          <div class="nosotros-card-icon">🏭</div>
+          <h3>Nuestra Producción</h3>
+          <p>
+            Trabajamos con colmenas ubicadas en zonas naturales, alejadas de contaminantes.
+            La extracción se realiza de forma artesanal, respetando los tiempos naturales
+            de maduración de la miel para preservar todas sus propiedades.
+          </p>
+        </div>
+
+        <div class="nosotros-card fade-in delay-2">
+          <div class="nosotros-card-icon">🏆</div>
+          <h3>Calidad de Nuestros Productos</h3>
+          <p>
+            Nuestra miel no pasa por procesos de calentamiento excesivo ni adulteración.
+            Cada lote es revisado antes de ser envasado, garantizando que llegue a ti
+            con su sabor, aroma y propiedades intactas.
+          </p>
+        </div>
+
+        <div class="nosotros-card fade-in delay-3">
+          <div class="nosotros-card-icon">🐝</div>
+          <h3>Compromiso con la Apicultura</h3>
+          <p>
+            Las abejas son fundamentales para los ecosistemas. En LIMÉL practicamos
+            una apicultura responsable que prioriza el bienestar de las colonias, evita
+            la sobreexplotación y contribuye a la polinización de la flora local.
+          </p>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ══════════════════════════════════════════════════════
+       CONTACTO
+  ══════════════════════════════════════════════════════ -->
+  <section id="contacto" class="section" aria-label="Contacto">
+    <div class="container">
+      <div class="text-center fade-in">
+        <span class="section-label">Contacto</span>
+        <h2 class="section-title">Contáctanos</h2>
+        <p class="section-subtitle">
+          Estamos para atenderte y resolver tus dudas. Elige el canal que prefieras.
+        </p>
+      </div>
+
+      <div class="contacto-grid">
+        <!-- Info de contacto -->
+        <div class="contacto-info">
+
+          <!-- WhatsApp 1 -->
+          <div class="contact-card fade-in delay-1">
+            <div class="contact-card-icon green">
+              <svg viewBox="0 0 24 24" fill="currentColor" width="22" height="22" aria-hidden="true">
+                <path
+                  d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
+              </svg>
+            </div>
+            <div class="contact-card-body">
+              <p class="contact-card-label">WhatsApp — Línea 1</p>
+              <p class="contact-card-value">900 173 076</p>
+              <a href="https://wa.me/51900173076?text=Hola%2C%20me%20interesa%20la%20miel%20LIMÉL"
+                class="contact-card-link" target="_blank" rel="noopener noreferrer" id="contacto-wa1-btn">
+                Iniciar conversación →
+              </a>
+            </div>
+          </div>
+
+          <!-- WhatsApp 2 -->
+          <div class="contact-card fade-in delay-2">
+            <div class="contact-card-icon green">
+              <svg viewBox="0 0 24 24" fill="currentColor" width="22" height="22" aria-hidden="true">
+                <path
+                  d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
+              </svg>
+            </div>
+            <div class="contact-card-body">
+              <p class="contact-card-label">WhatsApp — Línea 2</p>
+              <p class="contact-card-value">900 169 735</p>
+              <a href="https://wa.me/51900169735?text=Hola%2C%20me%20interesa%20la%20miel%20LIMÉL"
+                class="contact-card-link" target="_blank" rel="noopener noreferrer" id="contacto-wa2-btn">
+                Iniciar conversación →
+              </a>
+            </div>
+          </div>
+
+          <!-- Teléfono -->
+          <div class="contact-card fade-in delay-3">
+            <div class="contact-card-icon">📞</div>
+            <div class="contact-card-body">
+              <p class="contact-card-label">Teléfono</p>
+              <p class="contact-card-value">
+                <a href="tel:+51900173076">900 173 076</a> /
+                <a href="tel:+51900169735">900 169 735</a>
+              </p>
+            </div>
+          </div>
+
+          <!-- Redes sociales -->
+          <div class="contact-card fade-in delay-4" style="flex-direction:column;gap:12px;align-items:flex-start;">
+            <div style="display:flex;align-items:center;gap:16px;width:100%;">
+              <div class="contact-card-icon" style="background:linear-gradient(135deg,#405DE6,#E1306C,#FCAF45);">📱
+              </div>
+              <div class="contact-card-body">
+                <p class="contact-card-label">Redes Sociales</p>
+                <p class="contact-card-value" style="font-size:.9rem;font-weight:400;color:var(--color-text-light);">
+                  Síguenos para novedades y promociones
+                </p>
+              </div>
+            </div>
+            <div class="social-links" style="width:100%;">
+              <a href="https://facebook.com/limel" class="social-link" target="_blank" rel="noopener noreferrer"
+                aria-label="Facebook de LIMÉL" id="contacto-fb-link">
+                <span class="icon">📘</span> Facebook
+              </a>
+              <a href="https://instagram.com/limel" class="social-link" target="_blank" rel="noopener noreferrer"
+                aria-label="Instagram de LIMÉL" id="contacto-ig-link">
+                <span class="icon">📸</span> Instagram
+              </a>
+              <a href="https://tiktok.com/@limel" class="social-link" target="_blank" rel="noopener noreferrer"
+                aria-label="TikTok de LIMÉL" id="contacto-tt-link">
+                <span class="icon">🎵</span> TikTok
+              </a>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Foto del producto en lugar del mapa -->
+        <div class="contacto-map fade-in-right"
+          style="border-radius:var(--radius-lg);overflow:hidden;box-shadow:var(--shadow-lg);border:1px solid var(--color-border);">
+          <img src="assets/images/honey-jar.jpg" alt="Miel de Abeja LIMÉL — Producto artesanal"
+            style="width:100%;height:420px;object-fit:cover;display:block;" />
+          <div class="map-address" style="flex-direction:column;align-items:flex-start;gap:4px;">
+            <div style="display:flex;align-items:center;gap:8px;">
+              <span>📍</span>
+              <strong style="color:var(--color-dark);font-size:.95rem;">Ubicación</strong>
+            </div>
+            <span style="font-size:.9rem;color:var(--color-text-light);">Chucllahuaycco, Vinchos — Ayacucho, Perú</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ══════════════════════════════════════════════════════
+       FOOTER
+  ══════════════════════════════════════════════════════ -->
+  <footer id="footer" aria-label="Pie de página">
+    <div class="footer-main">
+
+      <!-- Marca -->
+      <div class="footer-brand">
+        <div class="footer-logo">
+          <img src="assets/images/logo.jpg" alt="Logo LIMÉL" />
+          <span class="footer-logo-text">LIMÉL</span>
+        </div>
+        <p class="footer-brand-desc">
+          Miel de abeja 100% natural y artesanal, desde Chucllahuaycco, Vinchos, Ayacucho.
+          Producida con pasión, respeto por la naturaleza y compromiso con la calidad.
+        </p>
+        <div class="footer-social" aria-label="Redes sociales">
+          <a href="https://facebook.com/limel" class="footer-social-link" target="_blank" rel="noopener noreferrer"
+            aria-label="Facebook" id="footer-fb-link">📘</a>
+          <a href="https://instagram.com/limel" class="footer-social-link" target="_blank" rel="noopener noreferrer"
+            aria-label="Instagram" id="footer-ig-link">📸</a>
+          <a href="https://tiktok.com/@limel" class="footer-social-link" target="_blank" rel="noopener noreferrer"
+            aria-label="TikTok" id="footer-tt-link">🎵</a>
+        </div>
+      </div>
+
+      <!-- Navegación -->
+      <div class="footer-col">
+        <h4>Navegación</h4>
+        <ul>
+          <li><a href="#inicio">🏠 Inicio</a></li>
+          <li><a href="#catalogo">🍯 Catálogo</a></li>
+          <li><a href="#informacion">📖 Información General</a></li>
+          <li><a href="#beneficios">💛 Beneficios</a></li>
+          <li><a href="#nosotros">🐝 Sobre Nosotros</a></li>
+          <li><a href="#contacto">📞 Contacto</a></li>
+        </ul>
+      </div>
+
+      <!-- Contacto footer -->
+      <div class="footer-col">
+        <h4>Contáctanos</h4>
+        <div class="footer-contact-item">
+          <span>💬</span>
+          <span>
+            <a href="https://wa.me/51900173076" target="_blank" rel="noopener noreferrer">900 173 076</a><br />
+            <a href="https://wa.me/51900169735" target="_blank" rel="noopener noreferrer">900 169 735</a>
+          </span>
+        </div>
+        <div class="footer-contact-item">
+          <span>📍</span>
+          <span>Chucllahuaycco, Vinchos<br />Ayacucho — Perú</span>
+        </div>
+      </div>
+
+      <!-- Síguenos -->
+      <div class="footer-col">
+        <h4>Síguenos</h4>
+        <ul>
+          <li><a href="https://facebook.com/limell" target="_blank" rel="noopener noreferrer">📘 Facebook</a></li>
+          <li><a href="https://instagram.com/limell" target="_blank" rel="noopener noreferrer">📸 Instagram</a></li>
+          <li><a href="https://tiktok.com/@limell" target="_blank" rel="noopener noreferrer">🎵 TikTok</a></li>
+        </ul>
+      </div>
+
+    </div>
+
+    <!-- Bottom bar -->
+    <div style="border-top:1px solid rgba(255,248,231,.1);">
+      <div class="footer-bottom container">
+        <p class="footer-copyright">
+          © <span id="year"></span> LIMÉL. Todos los derechos reservados.
+        </p>
+        <div class="footer-bottom-links">
+          <a href="#inicio">Inicio</a>
+          <a href="#catalogo">Catálogo</a>
+          <a href="#contacto">Contacto</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+
+</html>
