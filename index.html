@@ -36,9 +36,7 @@
       <ul class="nav-links" role="menubar">
         <li role="none"><a href="#inicio" role="menuitem">Inicio</a></li>
         <li role="none"><a href="#catalogo" role="menuitem">Catálogo</a></li>
-        <li role="none"><a href="#informacion" role="menuitem">Información</a></li>
-        <li role="none"><a href="#beneficios" role="menuitem">Beneficios</a></li>
-        <li role="none"><a href="#nosotros" role="menuitem">Nosotros</a></li>
+        <li role="none"><a href="#empresa" role="menuitem">Nuestra Empresa</a></li>
         <li role="none"><a href="#contacto" role="menuitem">Contacto</a></li>
         <li role="none">
           <a href="https://wa.me/51900173076?text=Hola%2C%20me%20interesa%20la%20miel%20LIMELL" class="nav-whatsapp"
@@ -64,9 +62,7 @@
     <button id="drawer-close" class="drawer-close" aria-label="Cerrar menú">✕</button>
     <a href="#inicio">Inicio</a>
     <a href="#catalogo">Catálogo</a>
-    <a href="#informacion">Información General</a>
-    <a href="#beneficios">Beneficios</a>
-    <a href="#nosotros">Sobre Nosotros</a>
+    <a href="#empresa">Nuestra Empresa</a>
     <a href="#contacto">Contacto</a>
     <a href="https://wa.me/51900173076?text=Hola%2C%20me%20interesa%20la%20miel%20LIM%C3%89L" target="_blank"
       rel="noopener noreferrer" style="color:#25D366;margin-top:16px;font-size:1.3rem;">
@@ -244,356 +240,169 @@
     </div>
   </section>
 
+  <!-- ══════════════════════════════════════════════════════
+       PARALLAX DIVIDER
+  ══════════════════════════════════════════════════════ -->
+  <div class="parallax-divider fade-in" aria-hidden="true">
+    <div class="parallax-content">
+      <h2>Miel extraída de la propia naturaleza</h2>
+      <p>Directo del panal, manteniendo su pureza y calidad artesanal en cada frasco.</p>
+    </div>
+  </div>
 
   <!-- ══════════════════════════════════════════════════════
-       INFORMACIÓN GENERAL
+       NUESTRA EMPRESA — sección unificada con tabs
   ══════════════════════════════════════════════════════ -->
-  <section id="informacion" class="section" aria-label="Información general sobre la miel">
+  <section id="empresa" class="section section--empresa" aria-label="Nuestra empresa">
     <div class="container">
       <div class="text-center fade-in">
-        <span class="section-label">Información General</span>
-        <h2 class="section-title">Todo sobre la miel de abeja</h2>
-        <p class="section-subtitle">Conoce qué es la miel, cómo se obtiene y cuáles son sus principales características.
-        </p>
+        <span class="section-label">Nuestra Empresa</span>
+        <h2 class="section-title">Conoce LIMÉL a fondo</h2>
+        <p class="section-subtitle">Información, beneficios y nuestra historia en un solo lugar.</p>
       </div>
 
-      <div class="info-grid">
+      <!-- Tabs de navegación -->
+      <div class="empresa-tabs" role="tablist" aria-label="Secciones de la empresa">
+        <button class="empresa-tab active" id="tab-informacion" role="tab" aria-selected="true" aria-controls="panel-informacion" data-tab="informacion">
+          <span class="tab-icon">📖</span>
+          <span>Información</span>
+        </button>
+        <button class="empresa-tab" id="tab-beneficios" role="tab" aria-selected="false" aria-controls="panel-beneficios" data-tab="beneficios">
+          <span class="tab-icon">💛</span>
+          <span>Beneficios</span>
+        </button>
+        <button class="empresa-tab" id="tab-nosotros" role="tab" aria-selected="false" aria-controls="panel-nosotros" data-tab="nosotros">
+          <span class="tab-icon">🐝</span>
+          <span>Nosotros</span>
+        </button>
+      </div>
 
-        <!-- ¿Qué es? -->
-        <div class="info-card fade-in delay-1">
-          <div class="info-card-icon">🍯</div>
-          <h3>¿Qué es la miel de abeja?</h3>
-          <p>
-            La miel es una sustancia natural producida por las abejas (<em>Apis mellifera</em>)
+      <!-- Panel: Información -->
+      <div id="panel-informacion" class="empresa-panel active" role="tabpanel" aria-labelledby="tab-informacion">
+        <div class="info-grid">
+          <div class="info-card fade-in delay-1">
+            <div class="info-card-icon">🍯</div>
+            <h3>¿Qué es la miel de abeja?</h3>
+            <p>La miel es una sustancia natural producida por las abejas (<em>Apis mellifera</em>)
             a partir del néctar de las flores. Las abejas recolectan el néctar, lo procesan
             con enzimas propias y lo depositan en los panales para su maduración. El resultado
-            es un alimento denso, dulce y lleno de compuestos bioactivos. Su composición varía
-            según el tipo de flores de las que proviene, lo que explica la diversidad de
-            sabores, colores y aromas que puede presentar.
-          </p>
-        </div>
-
-        <!-- ¿Cómo se obtiene? -->
-        <div class="info-card fade-in delay-2">
-          <div class="info-card-icon">🌸</div>
-          <h3>¿Cómo se obtiene?</h3>
-          <p>
-            El proceso comienza cuando las abejas recolectoras visitan las flores y recogen
-            el néctar con su probóscide. En la colmena, otras abejas lo procesan
-            masticándolo y añadiendo enzimas que transforman los azúcares. Luego lo depositan
-            en las celdas del panal, donde el agua se evapora gracias al aleteo constante
-            de las abejas hasta alcanzar la concentración adecuada. Los apicultores retiran
-            los marcos llenos, extraen la miel por centrifugado y la filtran para eliminar
-            restos de cera, conservando sus propiedades intactas.
-          </p>
-        </div>
-
-        <!-- Características de una miel natural -->
-        <div class="info-card fade-in delay-3">
-          <div class="info-card-icon">✨</div>
-          <h3>Características de una miel natural</h3>
-          <p>
-            Una miel natural y de calidad presenta ciertas características que la distinguen
-            de los productos adulterados: su textura es densa y viscosa; su color puede
-            variar del dorado claro al ámbar oscuro según la flora de origen; su aroma es
-            floral y complejo; y con el tiempo tiende a cristalizar, lo cual es una señal
-            de autenticidad. No debe presentar espuma excesiva ni separación de capas.
-            La miel pura no caduca si se almacena correctamente en recipientes sellados
-            y lejos de la humedad.
-          </p>
-        </div>
-
-        <!-- Información sobre el consumo -->
-        <div class="info-card fade-in delay-4">
-          <div class="info-card-icon">🥄</div>
-          <h3>Información sobre el consumo</h3>
-          <p>
-            La miel puede consumirse directamente, usarse como endulzante natural en bebidas
-            o preparaciones culinarias, y aplicarse como ingrediente en recetas dulces y
-            saladas. Se recomienda consumirla con moderación, especialmente en personas con
-            diabetes o que controlan su ingesta de azúcares.
-            <strong>No debe administrarse a niños menores de 1 año</strong> debido al riesgo
-            de botulismo infantil. Para preservar sus propiedades, es preferible no calentarla
-            a temperaturas elevadas. Almacenarla en un lugar fresco, seco y alejado de la
-            luz directa garantiza su durabilidad.
-          </p>
-        </div>
-
-      </div>
-    </div>
-
-    <!-- Decorative strip -->
-    <div class="honeycomb-strip" style="margin-top:80px;" aria-hidden="true"></div>
-  </section>
-
-
-  <!-- ══════════════════════════════════════════════════════
-       BENEFICIOS
-  ══════════════════════════════════════════════════════ -->
-  <section id="beneficios" class="section section--dark" aria-label="Beneficios de la miel">
-    <div class="container">
-      <div class="text-center fade-in">
-        <span class="section-label" style="color:var(--color-primary-light)">Beneficios</span>
-        <h2 class="section-title">Beneficios de la Miel de Abeja</h2>
-        <p class="section-subtitle">
-          Información basada en investigaciones científicas y recomendaciones de organismos reconocidos.
-        </p>
-      </div>
-
-      <!-- Disclaimer -->
-      <div class="disclaimer-box fade-in">
-        <span>⚠️</span>
-        <p>
-          <strong style="color:rgba(255,248,231,.9)">Aviso importante:</strong>
-          La siguiente información tiene carácter educativo y divulgativo. No constituye
-          un diagnóstico médico, ni una recomendación de tratamiento o cura de enfermedades.
-          Ante cualquier consulta sobre salud, consulte a un profesional médico calificado.
-        </p>
-      </div>
-
-      <!-- Beneficio cards -->
-      <div class="beneficios-grid">
-
-        <!-- Energía -->
-        <div class="beneficio-card fade-in delay-1">
-          <div class="beneficio-card-header">
-            <div class="beneficio-icon">⚡</div>
-            <h3>Fuente natural de energía</h3>
+            es un alimento denso, dulce y lleno de compuestos bioactivos.</p>
           </div>
-          <p>
-            La miel es una fuente concentrada de carbohidratos, principalmente fructosa y
-            glucosa, que el organismo puede absorber con relativa rapidez. Cada 100 g de
-            miel aporta aproximadamente 304 kcal. Por su contenido de azúcares naturales,
-            es utilizada por atletas y como fuente de energía rápida en situaciones de
-            desgaste físico.
-          </p>
-          <div class="beneficio-cite">
-            <span>📋</span>
-            USDA FoodData Central. (2019). <em>Honey, raw.</em> U.S. Department of Agriculture.
-            Recuperado de fdc.nal.usda.gov
+          <div class="info-card fade-in delay-2">
+            <div class="info-card-icon">🌸</div>
+            <h3>¿Cómo se obtiene?</h3>
+            <p>El proceso comienza cuando las abejas visitan las flores y recogen el néctar.
+            En la colmena lo procesan añadiendo enzimas que transforman los azúcares. Los apicultores
+            retiran los marcos, extraen la miel por centrifugado y la filtran, conservando sus
+            propiedades intactas.</p>
           </div>
-        </div>
-
-        <!-- Antioxidantes -->
-        <div class="beneficio-card fade-in delay-2">
-          <div class="beneficio-card-header">
-            <div class="beneficio-icon">🛡️</div>
-            <h3>Propiedades antioxidantes</h3>
+          <div class="info-card fade-in delay-3">
+            <div class="info-card-icon">✨</div>
+            <h3>Características de una miel natural</h3>
+            <p>Una miel natural presenta textura densa y viscosa; su color varía del dorado claro
+            al ámbar oscuro. Con el tiempo tiende a cristalizar, lo cual es señal de autenticidad.
+            La miel pura no caduca si se almacena en recipientes sellados, lejos de la humedad.</p>
           </div>
-          <p>
-            Diversos estudios han identificado en la miel compuestos fenólicos, flavonoides
-            y otros antioxidantes que contribuyen a neutralizar los radicales libres. La
-            concentración de estos compuestos varía según el origen botánico de la miel;
-            las variedades más oscuras tienden a presentar mayor actividad antioxidante.
-          </p>
-          <div class="beneficio-cite">
-            <span>📋</span>
-            Gheldof, N. &amp; Engeseth, N. J. (2002). Antioxidant capacity of honeys from
-            various floral sources based on the determination of oxygen radical absorbance
-            capacity and inhibition of in vitro lipoprotein oxidation in human serum samples.
-            <em>Journal of Agricultural and Food Chemistry, 50</em>(10), 3050–3055.
+          <div class="info-card fade-in delay-4">
+            <div class="info-card-icon">🥄</div>
+            <h3>Información sobre el consumo</h3>
+            <p>Puede consumirse directamente o como endulzante natural en bebidas y recetas.
+            <strong>No debe administrarse a niños menores de 1 año</strong> por riesgo de
+            botulismo infantil. Almacenarla en lugar fresco y seco garantiza su durabilidad.</p>
           </div>
-        </div>
-
-        <!-- Sistema inmunológico -->
-        <div class="beneficio-card fade-in delay-3">
-          <div class="beneficio-card-header">
-            <div class="beneficio-icon">🩺</div>
-            <h3>Apoyo al sistema inmunológico</h3>
-          </div>
-          <p>
-            Investigaciones sugieren que la miel, especialmente variedades como la miel
-            de Manuka, posee propiedades que pueden contribuir a la modulación de la
-            respuesta inmunitaria. Se han identificado compuestos como el peróxido de
-            hidrógeno, el metilglioxal y defensinas que podrían influir en estos mecanismos.
-          </p>
-          <div class="beneficio-cite">
-            <span>📋</span>
-            Alvarez-Suarez, J. M., Gasparrini, M., Forbes-Hernández, T. Y., Mazzoni, L. &amp;
-            Giampieri, F. (2014). The composition and biological activity of honey: A focus
-            on Manuka honey. <em>Foods, 3</em>(3), 420–432. https://doi.org/10.3390/foods3030420
-          </div>
-        </div>
-
-        <!-- Digestión -->
-        <div class="beneficio-card fade-in delay-4">
-          <div class="beneficio-card-header">
-            <div class="beneficio-icon">🌱</div>
-            <h3>Efecto prebiótico y digestión</h3>
-          </div>
-          <p>
-            La miel contiene oligosacáridos que actúan como prebióticos, favoreciendo el
-            crecimiento de bacterias beneficiosas en el intestino como <em>Lactobacillus</em>
-            y <em>Bifidobacterium</em>. Algunos estudios sugieren que su consumo moderado
-            puede contribuir al equilibrio de la microbiota intestinal.
-          </p>
-          <div class="beneficio-cite">
-            <span>📋</span>
-            Molan, P. &amp; Rhodes, T. (2015). Honey: A biologic wound dressing.
-            <em>Wounds: A Compendium of Clinical Research and Practice, 27</em>(6), 141–151.
-            PMID: 26061489
-          </div>
-        </div>
-
-        <!-- Antimicrobiano -->
-        <div class="beneficio-card fade-in delay-1">
-          <div class="beneficio-card-header">
-            <div class="beneficio-icon">🔬</div>
-            <h3>Propiedades antimicrobianas</h3>
-          </div>
-          <p>
-            La miel presenta un bajo contenido de agua y un pH ácido (entre 3.2 y 4.5),
-            condiciones que inhiben el crecimiento de muchos microorganismos. Además,
-            la producción de peróxido de hidrógeno mediante la enzima glucosa oxidasa
-            contribuye a su actividad antimicrobiana, documentada en múltiples estudios
-            científicos y en el contexto de su uso en el cuidado de heridas menores.
-          </p>
-          <div class="beneficio-cite">
-            <span>📋</span>
-            National Honey Board. (2023). <em>Honey and health.</em> Honey.com.
-            Recuperado de honey.com/honey-industry/honey-and-health;
-            Mandal, M. D. &amp; Mandal, S. (2011). Honey: Its medicinal property and
-            antibacterial activity. <em>Asian Pacific Journal of Tropical Biomedicine, 1</em>(2), 154–160.
-          </div>
-        </div>
-
-        <!-- Bienestar general -->
-        <div class="beneficio-card fade-in delay-2">
-          <div class="beneficio-card-header">
-            <div class="beneficio-icon">💛</div>
-            <h3>Bienestar general y uso tradicional</h3>
-          </div>
-          <p>
-            La miel ha sido valorada en diversas culturas a lo largo de la historia como
-            alimento y remedio tradicional. Organizaciones de salud como la OMS reconocen
-            su uso popular para aliviar síntomas leves de la garganta. En cocina, es un
-            endulzante natural con menor índice glucémico que el azúcar refinada, aunque
-            se recomienda siempre un consumo moderado y consciente.
-          </p>
-          <div class="beneficio-cite">
-            <span>📋</span>
-            World Health Organization. (2001). <em>WHO monographs on selected medicinal
-              plants, Vol. 2.</em> WHO Press. (Referencia general sobre uso tradicional
-            de productos apícolas.)
-          </div>
-        </div>
-
-      </div>
-
-      <!-- Referencias -->
-      <div class="referencias-section fade-in">
-        <h3>📚 Referencias bibliográficas</h3>
-        <ul class="referencias-list" aria-label="Referencias bibliográficas">
-          <li>
-            USDA FoodData Central. (2019). <em>Honey, raw.</em> U.S. Department of Agriculture.
-            Disponible en: fdc.nal.usda.gov
-          </li>
-          <li>
-            Gheldof, N. &amp; Engeseth, N. J. (2002). Antioxidant capacity of honeys from various
-            floral sources based on the determination of oxygen radical absorbance capacity and inhibition
-            of in vitro lipoprotein oxidation in human serum samples.
-            <em>Journal of Agricultural and Food Chemistry, 50</em>(10), 3050–3055.
-            https://doi.org/10.1021/jf0114530
-          </li>
-          <li>
-            Alvarez-Suarez, J. M., Gasparrini, M., Forbes-Hernández, T. Y., Mazzoni, L. &amp;
-            Giampieri, F. (2014). The composition and biological activity of honey: A focus on Manuka honey.
-            <em>Foods, 3</em>(3), 420–432. https://doi.org/10.3390/foods3030420
-          </li>
-          <li>
-            Molan, P. &amp; Rhodes, T. (2015). Honey: A biologic wound dressing.
-            <em>Wounds: A Compendium of Clinical Research and Practice, 27</em>(6), 141–151.
-            PMID: 26061489
-          </li>
-          <li>
-            Mandal, M. D. &amp; Mandal, S. (2011). Honey: Its medicinal property and antibacterial activity.
-            <em>Asian Pacific Journal of Tropical Biomedicine, 1</em>(2), 154–160.
-            https://doi.org/10.1016/S2221-1691(11)60016-6
-          </li>
-          <li>
-            National Honey Board. (2023). <em>Honey and health.</em> Honey.com.
-            Recuperado de: https://honey.com/honey-industry/honey-and-health
-          </li>
-          <li>
-            World Health Organization. (2001). <em>WHO monographs on selected medicinal plants, Vol. 2.</em>
-            WHO Press. ISBN 92 4 154537 2
-          </li>
-        </ul>
-      </div>
-
-    </div>
-  </section>
-
-
-  <!-- ══════════════════════════════════════════════════════
-       SOBRE NOSOTROS
-  ══════════════════════════════════════════════════════ -->
-  <section id="nosotros" class="section section--cream" aria-label="Sobre nosotros">
-    <div class="container">
-      <div class="text-center fade-in">
-        <span class="section-label">Sobre Nosotros</span>
-        <h2 class="section-title">Nuestra historia y compromiso</h2>
-        <p class="section-subtitle">
-          Conoce quiénes somos, cómo producimos nuestra miel y por qué nos apasiona la apicultura responsable.
-        </p>
-      </div>
-
-      <div class="nosotros-intro">
-        <div class="nosotros-img fade-in-left">
-          <img src="assets/images/beekeeper.jpg" alt="Apicultor de LIMÉL inspeccionando colmena" />
-        </div>
-        <div class="fade-in-right">
-          <span class="section-label">Nuestra historia</span>
-          <h3
-            style="font-family:var(--font-display);font-size:1.8rem;font-weight:700;color:var(--color-dark);margin-bottom:16px;line-height:1.3;">
-            Nacimos del amor por la naturaleza y las abejas
-          </h3>
-          <p style="font-size:1rem;color:var(--color-text);line-height:1.8;margin-bottom:16px;">
-            LIMÉL nació de una pasión familiar por la apicultura. Lo que comenzó como
-            una actividad artesanal a pequeña escala se fue convirtiendo en un compromiso
-            serio con la producción de miel de calidad. Desde el inicio, nuestra prioridad
-            fue siempre la pureza del producto y el bienestar de las colmenas.
-          </p>
-          <p style="font-size:1rem;color:var(--color-text);line-height:1.8;">
-            Hoy, LIMÉL es el resultado de años de aprendizaje, dedicación y respeto por
-            los ciclos naturales. Cada frasco de miel que ofrecemos lleva consigo el
-            esfuerzo de nuestras abejas y el cuidado de nuestro equipo.
-          </p>
         </div>
       </div>
 
-      <div class="nosotros-cards">
-
-        <div class="nosotros-card fade-in delay-1">
-          <div class="nosotros-card-icon">🏭</div>
-          <h3>Nuestra Producción</h3>
-          <p>
-            Trabajamos con colmenas ubicadas en zonas naturales, alejadas de contaminantes.
-            La extracción se realiza de forma artesanal, respetando los tiempos naturales
-            de maduración de la miel para preservar todas sus propiedades.
-          </p>
+      <!-- Panel: Beneficios -->
+      <div id="panel-beneficios" class="empresa-panel" role="tabpanel" aria-labelledby="tab-beneficios" hidden>
+        <div class="disclaimer-box fade-in" style="margin-bottom:40px;">
+          <span>⚠️</span>
+          <p><strong>Aviso importante:</strong> La siguiente información tiene carácter educativo y divulgativo.
+          No constituye un diagnóstico médico ni recomendación de tratamiento. Consulte a un profesional médico.</p>
         </div>
-
-        <div class="nosotros-card fade-in delay-2">
-          <div class="nosotros-card-icon">🏆</div>
-          <h3>Calidad de Nuestros Productos</h3>
-          <p>
-            Nuestra miel no pasa por procesos de calentamiento excesivo ni adulteración.
-            Cada lote es revisado antes de ser envasado, garantizando que llegue a ti
-            con su sabor, aroma y propiedades intactas.
-          </p>
+        <div class="beneficios-grid">
+          <div class="beneficio-card fade-in delay-1">
+            <div class="beneficio-card-header"><div class="beneficio-icon">⚡</div><h3>Fuente natural de energía</h3></div>
+            <p>La miel es fuente concentrada de carbohidratos (fructosa y glucosa). Cada 100 g aporta
+            aprox. 304 kcal. Es utilizada por atletas como fuente de energía rápida.</p>
+            <div class="beneficio-cite"><span>📋</span>USDA FoodData Central. (2019). <em>Honey, raw.</em></div>
+          </div>
+          <div class="beneficio-card fade-in delay-2">
+            <div class="beneficio-card-header"><div class="beneficio-icon">🛡️</div><h3>Propiedades antioxidantes</h3></div>
+            <p>Estudios identificaron compuestos fenólicos y flavonoides que neutralizan radicales libres.
+            Las variedades más oscuras tienden a mayor actividad antioxidante.</p>
+            <div class="beneficio-cite"><span>📋</span>Gheldof &amp; Engeseth (2002). <em>Journal of Agricultural and Food Chemistry, 50</em>(10).</div>
+          </div>
+          <div class="beneficio-card fade-in delay-3">
+            <div class="beneficio-card-header"><div class="beneficio-icon">🩺</div><h3>Apoyo al sistema inmunológico</h3></div>
+            <p>Investigaciones sugieren propiedades que contribuyen a la modulación de la respuesta
+            inmunitaria, con compuestos como peróxido de hidrógeno y defensinas.</p>
+            <div class="beneficio-cite"><span>📋</span>Alvarez-Suarez et al. (2014). <em>Foods, 3</em>(3), 420–432.</div>
+          </div>
+          <div class="beneficio-card fade-in delay-4">
+            <div class="beneficio-card-header"><div class="beneficio-icon">🌱</div><h3>Efecto prebiótico y digestión</h3></div>
+            <p>Contiene oligosacáridos que favorecen bacterias beneficiosas como <em>Lactobacillus</em>
+            y <em>Bifidobacterium</em>, contribuyendo al equilibrio de la microbiota intestinal.</p>
+            <div class="beneficio-cite"><span>📋</span>Molan &amp; Rhodes (2015). <em>Wounds, 27</em>(6), 141–151.</div>
+          </div>
+          <div class="beneficio-card fade-in delay-1">
+            <div class="beneficio-card-header"><div class="beneficio-icon">🔬</div><h3>Propiedades antimicrobianas</h3></div>
+            <p>Su bajo contenido de agua y pH ácido (3.2–4.5) inhiben el crecimiento de microorganismos.
+            El peróxido de hidrógeno producido por la glucosa oxidasa potencia esta acción.</p>
+            <div class="beneficio-cite"><span>📋</span>Mandal &amp; Mandal (2011). <em>Asian Pacific Journal of Tropical Biomedicine, 1</em>(2).</div>
+          </div>
+          <div class="beneficio-card fade-in delay-2">
+            <div class="beneficio-card-header"><div class="beneficio-icon">💛</div><h3>Bienestar general y uso tradicional</h3></div>
+            <p>Valorada en diversas culturas, la OMS reconoce su uso para aliviar síntomas leves.
+            Como endulzante tiene menor índice glucémico que el azúcar refinada.</p>
+            <div class="beneficio-cite"><span>📋</span>World Health Organization. (2001). <em>WHO monographs on selected medicinal plants, Vol. 2.</em></div>
+          </div>
         </div>
+      </div>
 
-        <div class="nosotros-card fade-in delay-3">
-          <div class="nosotros-card-icon">🐝</div>
-          <h3>Compromiso con la Apicultura</h3>
-          <p>
-            Las abejas son fundamentales para los ecosistemas. En LIMÉL practicamos
-            una apicultura responsable que prioriza el bienestar de las colonias, evita
-            la sobreexplotación y contribuye a la polinización de la flora local.
-          </p>
+      <!-- Panel: Nosotros -->
+      <div id="panel-nosotros" class="empresa-panel" role="tabpanel" aria-labelledby="tab-nosotros" hidden>
+        <div class="nosotros-intro">
+          <div class="nosotros-img fade-in-left">
+            <img src="assets/images/beekeeper.jpg" alt="Apicultor de LIMÉL inspeccionando colmena" />
+          </div>
+          <div class="fade-in-right">
+            <span class="section-label">Nuestra historia</span>
+            <h3 style="font-family:var(--font-display);font-size:1.8rem;font-weight:700;color:var(--color-dark);margin-bottom:16px;line-height:1.3;">
+              Nacimos del amor por la naturaleza y las abejas
+            </h3>
+            <p style="font-size:1rem;color:var(--color-text);line-height:1.8;margin-bottom:16px;">
+              LIMÉL nació de una pasión familiar por la apicultura. Lo que comenzó como
+              una actividad artesanal a pequeña escala se fue convirtiendo en un compromiso
+              serio con la producción de miel de calidad.
+            </p>
+            <p style="font-size:1rem;color:var(--color-text);line-height:1.8;">
+              Hoy, LIMÉL es el resultado de años de aprendizaje, dedicación y respeto por
+              los ciclos naturales. Cada frasco lleva el esfuerzo de nuestras abejas y el
+              cuidado de nuestro equipo.
+            </p>
+          </div>
         </div>
-
+        <div class="nosotros-cards" style="margin-top:48px;">
+          <div class="nosotros-card fade-in delay-1">
+            <div class="nosotros-card-icon">🏭</div>
+            <h3>Nuestra Producción</h3>
+            <p>Trabajamos con colmenas en zonas naturales alejadas de contaminantes.
+            La extracción se realiza de forma artesanal, respetando los tiempos de maduración.</p>
+          </div>
+          <div class="nosotros-card fade-in delay-2">
+            <div class="nosotros-card-icon">🏆</div>
+            <h3>Calidad de Nuestros Productos</h3>
+            <p>Sin calentamiento excesivo ni adulteración. Cada lote es revisado antes de ser
+            envasado, garantizando sabor, aroma y propiedades intactas.</p>
+          </div>
+          <div class="nosotros-card fade-in delay-3">
+            <div class="nosotros-card-icon">🐝</div>
+            <h3>Compromiso con la Apicultura</h3>
+            <p>Practicamos apicultura responsable que prioriza el bienestar de las colonias,
+            evita la sobreexplotación y contribuye a la polinización de la flora local.</p>
+          </div>
+        </div>
       </div>
 
     </div>
@@ -746,9 +555,7 @@
         <ul>
           <li><a href="#inicio">🏠 Inicio</a></li>
           <li><a href="#catalogo">🍯 Catálogo</a></li>
-          <li><a href="#informacion">📖 Información General</a></li>
-          <li><a href="#beneficios">💛 Beneficios</a></li>
-          <li><a href="#nosotros">🐝 Sobre Nosotros</a></li>
+          <li><a href="#empresa">📖 Nuestra Empresa</a></li>
           <li><a href="#contacto">📞 Contacto</a></li>
         </ul>
       </div>
@@ -791,10 +598,175 @@
           <a href="#inicio">Inicio</a>
           <a href="#catalogo">Catálogo</a>
           <a href="#contacto">Contacto</a>
+          <a href="#" id="footer-terms-link" aria-haspopup="dialog" aria-controls="modal-terms">📋 Términos y
+            Condiciones</a>
         </div>
       </div>
     </div>
   </footer>
+
+
+  <!-- ══════════════════════════════════════════════════════
+       MODAL — TÉRMINOS Y CONDICIONES
+  ══════════════════════════════════════════════════════ -->
+  <div id="modal-terms" class="modal-overlay" role="dialog" aria-modal="true" aria-labelledby="modal-terms-title"
+    hidden>
+    <div class="modal-box">
+      <button class="modal-close" id="modal-terms-close" aria-label="Cerrar Términos y Condiciones">✕</button>
+
+      <div class="modal-header">
+        <div class="modal-header-icon">📋</div>
+        <h2 id="modal-terms-title">Términos y Condiciones</h2>
+        <p class="modal-header-sub">LIMÉL — Miel de Abeja Natural y Artesanal</p>
+      </div>
+
+      <div class="modal-body">
+
+        <div class="terms-section">
+          <h3>1. Información General</h3>
+          <p>
+            Estos Términos y Condiciones regulan el uso del sitio web de <strong>LIMÉL</strong>, empresa
+            dedicada a la producción y comercialización de miel de abeja 100% natural y artesanal,
+            con origen en Chucllahuaycco, Vinchos, Ayacucho, Perú.
+          </p>
+          <p>
+            Al acceder y utilizar este sitio web, usted acepta cumplir con los presentes términos.
+            Si no está de acuerdo con alguna de las condiciones aquí descritas, le recomendamos
+            no hacer uso de nuestros servicios.
+          </p>
+        </div>
+
+        <div class="terms-section">
+          <h3>2. Productos y Precios</h3>
+          <p>
+            LIMÉL ofrece miel de abeja 100% natural en presentación de 1&nbsp;000 g (1 kg) al precio
+            de <strong>S/&nbsp;35.00</strong>. Los precios pueden variar sin previo aviso en función
+            de la disponibilidad de stock o condiciones de mercado.
+          </p>
+          <p>
+            Toda la información sobre características, ingredientes y propiedades del producto
+            es proporcionada de buena fe y con fines informativos.
+          </p>
+        </div>
+
+        <div class="terms-section">
+          <h3>3. Proceso de Compra y Pagos</h3>
+          <p>
+            Las ventas se coordinan directamente a través de <strong>WhatsApp</strong>,
+            canal oficial de ventas de LIMÉL. No operamos ninguna plataforma de pago en línea propia.
+          </p>
+          <ul class="terms-list">
+            <li>Los pedidos se confirman mediante acuerdo expreso con el vendedor vía WhatsApp.</li>
+            <li>Los métodos de pago aceptados serán informados al momento de cada transacción.</li>
+            <li>LIMÉL no se responsabiliza por pagos realizados a cuentas no verificadas o no comunicadas oficialmente.
+            </li>
+          </ul>
+        </div>
+
+        <div class="terms-section">
+          <h3>4. Envíos y Entregas</h3>
+          <p>
+            Los términos de envío, plazos de entrega y costos de despacho son acordados directamente
+            con el cliente al momento de la compra. LIMÉL hace su mayor esfuerzo por cumplir los
+            tiempos estimados, sin embargo no garantiza fechas exactas de entrega ante situaciones
+            de fuerza mayor.
+          </p>
+        </div>
+
+        <div class="terms-section">
+          <h3>5. Política de Devoluciones</h3>
+          <p>
+            En caso de recibir un producto en mal estado, el cliente debe comunicarse con
+            LIMÉL dentro de las <strong>48 horas</strong> siguientes a la recepción del pedido,
+            adjuntando evidencia fotográfica del problema. LIMÉL evaluará cada caso y, de
+            corresponder, procederá al reemplazo del producto.
+          </p>
+          <p>
+            No se aceptan devoluciones por cambio de opinión una vez que el producto haya sido entregado en condiciones
+            óptimas.
+          </p>
+        </div>
+
+        <div class="terms-section">
+          <h3>6. Información Nutricional y Aviso de Salud</h3>
+          <p>
+            La información sobre beneficios de la miel publicada en este sitio tiene carácter
+            educativo y divulgativo. <strong>No constituye diagnóstico médico ni recomendación
+              de tratamiento</strong>. Ante cualquier consulta de salud, se sugiere consultar a un
+            profesional médico calificado.
+          </p>
+          <p>
+            <strong>Importante:</strong> La miel no debe administrarse a niños menores de 1 año
+            debido al riesgo de botulismo infantil.
+          </p>
+        </div>
+
+        <div class="terms-section">
+          <h3>7. Propiedad Intelectual</h3>
+          <p>
+            Todo el contenido de este sitio web —incluyendo textos, imágenes, logotipos, diseño
+            gráfico y material multimedia— es propiedad de LIMÉL o de sus respectivos autores,
+            y está protegido por las leyes de propiedad intelectual aplicables en el Perú.
+          </p>
+          <p>
+            Queda prohibida la reproducción, distribución o uso comercial de cualquier contenido
+            de este sitio sin autorización expresa y por escrito de LIMÉL.
+          </p>
+        </div>
+
+        <div class="terms-section">
+          <h3>8. Privacidad y Datos Personales</h3>
+          <p>
+            LIMÉL respeta la privacidad de sus clientes. Los datos personales compartidos durante
+            el proceso de compra (nombre, número de teléfono, dirección) serán utilizados
+            exclusivamente para la gestión del pedido y nunca serán cedidos a terceros sin
+            consentimiento del titular.
+          </p>
+          <p>
+            Al contactarnos por WhatsApp, usted acepta que sus datos sean utilizados para
+            coordinar su pedido y brindarle atención post-venta.
+          </p>
+        </div>
+
+        <div class="terms-section">
+          <h3>9. Limitación de Responsabilidad</h3>
+          <p>
+            LIMÉL no será responsable por daños directos o indirectos derivados del uso
+            inadecuado del producto, ni por el incumplimiento de las instrucciones de
+            conservación y consumo indicadas en el envase y en este sitio.
+          </p>
+        </div>
+
+        <div class="terms-section">
+          <h3>10. Modificaciones</h3>
+          <p>
+            LIMÉL se reserva el derecho de actualizar estos Términos y Condiciones en
+            cualquier momento. Se recomienda a los usuarios revisar periódicamente esta sección
+            para mantenerse informados sobre posibles cambios.
+          </p>
+        </div>
+
+        <div class="terms-section">
+          <h3>11. Legislación Aplicable</h3>
+          <p>
+            Estos Términos y Condiciones se rigen por las leyes vigentes de la
+            <strong>República del Perú</strong>. Cualquier controversia derivada de su
+            aplicación será resuelta en los tribunales competentes de la ciudad de Ayacucho.
+          </p>
+        </div>
+
+        <div class="terms-section terms-section--last">
+          <p class="terms-footer-note">
+            🐝 Última actualización: septiembre de 2026 &nbsp;·&nbsp;
+            Para consultas: <a href="https://wa.me/51900173076" target="_blank" rel="noopener noreferrer">WhatsApp
+              LIMÉL</a>
+          </p>
+        </div>
+
+      </div><!-- /.modal-body -->
+    </div><!-- /.modal-box -->
+  </div><!-- /#modal-terms -->
+
 
   <script src="js/main.js"></script>
 </body>

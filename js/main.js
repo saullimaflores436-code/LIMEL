@@ -59,7 +59,10 @@ document.addEventListener('DOMContentLoaded', () => {
 
   /* Close drawer on Escape */
   document.addEventListener('keydown', e => {
-    if (e.key === 'Escape') closeDrawer();
+    if (e.key === 'Escape') {
+      closeDrawer();
+      closeTermsModal();
+    }
   });
 
   /* ── Scroll-in fade animations ────────────────────────── */
@@ -78,6 +81,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
   /* ── Smooth scroll for all anchor links ───────────────── */
   document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    /* Excluir el enlace de T&C que abre un modal */
+    if (anchor.id === 'footer-terms-link') return;
     anchor.addEventListener('click', function (e) {
       const target = document.querySelector(this.getAttribute('href'));
       if (target) {
@@ -88,5 +93,66 @@ document.addEventListener('DOMContentLoaded', () => {
       }
     });
   });
+
+  /* ── Modal Términos y Condiciones ─────────────────────── */
+  const termsLink  = document.getElementById('footer-terms-link');
+  const termsModal = document.getElementById('modal-terms');
+  const termsClose = document.getElementById('modal-terms-close');
+
+  const openTermsModal = () => {
+    termsModal.removeAttribute('hidden');
+    termsModal.classList.add('modal-enter');
+    document.body.style.overflow = 'hidden';
+    termsClose.focus();
+  };
+
+  const closeTermsModal = () => {
+    if (!termsModal || termsModal.hasAttribute('hidden')) return;
+    termsModal.setAttribute('hidden', '');
+    termsModal.classList.remove('modal-enter');
+    document.body.style.overflow = '';
+    if (termsLink) termsLink.focus();
+  };
+
+  if (termsLink)  termsLink.addEventListener('click',  e => { e.preventDefault(); openTermsModal(); });
+  if (termsClose) termsClose.addEventListener('click', closeTermsModal);
+
+  /* Cerrar al hacer clic fuera del modal-box */
+  if (termsModal) {
+    termsModal.addEventListener('click', e => {
+      if (e.target === termsModal) closeTermsModal();
+    });
+  }
+
+  /* ── Tabs Empresa ─────────────────────────────────────── */
+  const empresaTabs = document.querySelectorAll('.empresa-tab');
+  const empresaPanels = document.querySelectorAll('.empresa-panel');
+
+  if (empresaTabs.length > 0) {
+    empresaTabs.forEach(tab => {
+      tab.addEventListener('click', () => {
+        // Remover active de todos los tabs y paneles
+        empresaTabs.forEach(t => {
+          t.classList.remove('active');
+          t.setAttribute('aria-selected', 'false');
+        });
+        empresaPanels.forEach(p => {
+          p.classList.remove('active');
+          p.setAttribute('hidden', '');
+        });
+
+        // Añadir active al seleccionado
+        tab.classList.add('active');
+        tab.setAttribute('aria-selected', 'true');
+        
+        const targetId = tab.getAttribute('aria-controls');
+        const targetPanel = document.getElementById(targetId);
+        if (targetPanel) {
+          targetPanel.classList.add('active');
+          targetPanel.removeAttribute('hidden');
+        }
+      });
+    });
+  }
 
 });
